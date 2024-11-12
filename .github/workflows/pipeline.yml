@@ -1,0 +1,13 @@
+name: <nom de workflow>
+on: <la condition pour déclencher l'exécution du workflow>
+jobs:
+  <nom de job 1>:
+    runs-on: <OS de VM ou on exécute ce workflow (Ubuntu-latest, Windows-2019, ...)>
+    steps:
+      - name: <nom de step 1>
+        run: # La commande ou l'action à exécuter
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
